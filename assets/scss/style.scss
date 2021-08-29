@@ -8,7 +8,7 @@ $font-black: 700;
 
 /*Variables css*/
 
-/*Colores*/
+/*Colors*/
 :root{
     --first-color: HSL(9,100%,83%, 0.2863);
     --second-color: #FFB9AE;
@@ -16,7 +16,7 @@ $font-black: 700;
     --white-color: #FFF;
 }
 
-/*Fuente y tipografia*/
+/*ROOT*/
 :root{
     --body-font:'DM Sans', sans-serif;
 
@@ -146,7 +146,7 @@ img{
     }
     &__buy-div-in {
         position: absolute;
-        bottom: 2.5rem;
+        bottom: 3rem;
         display: initial;
     }
     &__buy-div-out {

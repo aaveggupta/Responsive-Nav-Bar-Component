@@ -2,7 +2,7 @@
 /*----- VARIABLES CSS Y SASS -----*/
 /*Varibles sass*/
 /*Variables css*/
-/*Colores*/
+/*Colors*/
 :root {
   --first-color: HSL(9,100%,83%, 0.2863);
   --second-color: #FFB9AE;
@@ -10,7 +10,7 @@
   --white-color: #FFF;
 }
 
-/*Fuente y tipografia*/
+/*ROOT*/
 :root {
   --body-font:'DM Sans', sans-serif;
   --h2-font-size: 1.5rem;
@@ -168,7 +168,7 @@ img {
 
 .nav__buy-div-in {
   position: absolute;
-  bottom: 2.5rem;
+  bottom: 3rem;
   display: initial;
 }
 
