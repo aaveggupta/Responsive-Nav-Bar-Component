@@ -8,7 +8,7 @@ In this small project, I have come with this minimal design of Responsive Nav Ba
 
 ### Links
 
-- Live Site URL: [LINK]()
+- Live Site URL: [LINK](https://aaveggupta.github.io/Responsive-Nav-Bar-Component/)
 
 ## My process
 
