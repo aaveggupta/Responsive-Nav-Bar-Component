@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="stylesheet" href="assets/scss/style.css" />
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v2.1.6/css/unicons.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Navigation Bar</title>
+  </head>
+  <body>
+    <header class="header__section">
+      <div class="nav bd-grid">
+        <div>
+          <a href="#" class="nav__logo">Aaveg</a>
+        </div>
+
+        <div class="nav__menu" id="nav-menu">
+          <div class="nav__close">
+            <ion-icon
+              name="close-outline"
+              class="nav__close-icon"
+              id="nav-close"
+            ></ion-icon>
+          </div>
+          <div class="nav__ul">
+            <ul class="nav__list">
+              <li class="nav__item"><i class="uil uil-info-circle nav__uil"></i><a href="#" class="nav__link">About</a></li>
+              <li class="nav__item">
+                <i class="uil uil-bag-alt nav__uil"></i>
+                <a href="#" class="nav__link">Projects</a>
+              </li>
+              <li class="nav__item">
+                <i class="uil uil-document-layout-left nav__uil"></i>
+                <a href="#" class="nav__link">Blog</a>
+              </li>
+              <li class="nav__item">
+                <i class="uil uil-comment-alt-message nav__uil"></i>
+                <a href="#" class="nav__link">Contact</a>
+              </li>
+            </ul>
+          </div>
+          <div class="nav__buy-div-in">
+            <a href="#" class="nav__buy-me">
+              <img
+                src="/assets/utilities/button.svg"
+                alt="coffee-button"
+                class="buy-me"
+              />
+            </a>
+          </div>
+        </div>
+
+        <div class="nav__buy-div-out">
+          <a href="#" class="nav__buy-me">
+            <img
+              src="/assets/utilities/button.svg"
+              alt="coffee-button"
+              class="buy-me"
+            />
+          </a>
+        </div>
+
+        <div class="nav__toggle" id="nav-toggle">
+          <ion-icon name="ellipsis-horizontal-outline"></ion-icon>
+        </div>
+      </div>
+    </header>
+
+    <!-- ICONOS -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.0.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script src="/assets/js/main.js"></script>
+  </body>
+</html>

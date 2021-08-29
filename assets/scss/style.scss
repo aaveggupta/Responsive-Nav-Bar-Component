@@ -1,0 +1,230 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@500;700&display=swap');
+
+/*----- VARIABLES CSS Y SASS -----*/
+/*Varibles sass*/
+$header-height: 4rem;
+$font-bold: 500;
+$font-black: 700;
+
+/*Variables css*/
+
+/*Colores*/
+:root{
+    --first-color: HSL(9,100%,83%, 0.2863);
+    --second-color: #FFB9AE;
+    --text-color: #990011;
+    --white-color: #FFF;
+}
+
+/*Fuente y tipografia*/
+:root{
+    --body-font:'DM Sans', sans-serif;
+
+    --h2-font-size: 1.5rem;
+    --big-font-size: 3rem;
+    --normal-font-size: 0.93rem;
+    --smaller-font-size: 0.75rem;
+}
+
+/*z index*/
+:root{
+    --z-back: -10;
+    --z-normal: 1;
+    --z-tooltip: 10;
+    --z-fixed: 100;
+    --z-modal: 1000;
+}
+
+/*----- BASE -----*/
+*,::before,::after{
+    box-sizing: border-box;
+}
+body{
+    margin: $header-height 0 0 0;
+    font-family: var(--body-font);
+    background-color: var(--white-color);
+    color: var(--text-color);
+    font-weight: $font-bold;
+    overflow: hidden;
+}
+h1,h2{
+    margin: 0;  
+}
+ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+
+/*----- LAYOUT -----*/
+.bd-grid{
+    max-width: 1200px;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+.header__section{
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: var(--z-modal);
+    background-color: var(--first-color);
+}
+
+/*----- PAGES -----*/
+.nav{
+    height: $header-height;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &__menu{
+        @media screen and (max-width: 768px){
+            position: fixed;
+            top: 0;
+            right: -100%;
+            background-color: var(--second-color);
+            width: 85%;
+            height: 100vh;
+            padding: .75rem;
+            z-index: var(--z-modal);
+            font-weight: $font-black;
+            transition: .5s;
+        }
+    }
+    &__close{
+        text-align: right;
+        margin-right: 2rem;
+
+        &-icon{
+            font-size: 1.9rem;
+            cursor: pointer;
+            font-weight: $font-black;
+        }
+    }
+    &__ul {
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: start;
+    }
+    &__list{
+        text-align: left;
+        padding-bottom: 5rem;
+        font-weight: $font-black;
+    }
+    &__item{
+        margin-bottom: 1rem;
+    }
+    &__link{
+        padding: .5rem .5rem .5rem 0;
+        color: var(--text-color);
+
+        &:hover{
+            color: #575757;
+        }
+    }
+    &__logo{
+        font-size: var(--h2-font-size);
+        font-weight: $font-black;
+        color: var(--text-color);
+    }
+    &__toggle{
+        font-size: 1.9rem;
+        cursor: pointer;
+    }
+    &__buy-me {
+        position: absolute;
+        bottom: 1rem;
+        width: 60%;
+    }
+    &__buy-div-in {
+        display: initial;
+    }
+    &__buy-div-out {
+        display: none;
+    }
+    &__uil {
+        font-size: var(--h2-font-size);
+    }
+}
+/*Aparecer menu*/
+.show{
+    right: -5%;
+}
+/*Cerrar menu*/
+.hidden{
+    right: -100%;
+}
+
+/*----- MEDIA QUERIES -----*/
+@media screen and (min-width: 768px){
+    .nav{
+
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+        &__logo {
+            display: inline-block;
+        }
+
+        &__menu {
+            display: flex;
+            flex-direction: row;
+        }
+
+        &__ul {
+            height: auto;
+            width: 100vh;
+            justify-content: center;
+            align-items: center;
+        }
+        &__list{
+            display: flex;
+            flex-direction: row;
+            padding: 0;
+        }
+        &__item{
+            margin-left: 1.5rem;
+            margin-bottom: 0;
+        }
+        &__toggle, &__close{
+            display: none;
+        }
+        &__link{
+            text-transform: initial;
+        }
+        &__buy-me {
+            position: static;
+        }
+        &__buy-div-in {
+            display: none;
+        }
+        &__buy-div-out {
+            display: initial;
+        }
+        &__uil {
+                
+        }
+        
+    }
+    .buy-me {
+        width: 85%;
+        margin-top: 10px;
+    }
+}
+@media screen and (min-width: 1200px){
+    .bd-grid{
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
