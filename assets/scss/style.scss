@@ -142,11 +142,11 @@ img{
         cursor: pointer;
     }
     &__buy-me {
-        position: absolute;
-        bottom: 1rem;
         width: 60%;
     }
     &__buy-div-in {
+        position: absolute;
+        bottom: 2.5rem;
         display: initial;
     }
     &__buy-div-out {
